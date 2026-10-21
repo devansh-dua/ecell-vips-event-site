@@ -6,6 +6,24 @@ import './OrientationEventPage.css';
 
 const eventUrl = '/events/ecell-orientation-2026';
 
+const foundationLinks = [
+  { label: 'LinkedIn', href: 'https://www.linkedin.com/company/llm4s-foundation/' },
+  { label: 'Reddit', href: 'https://www.reddit.com/user/llm4s_foundation/' },
+  { label: 'X / Twitter', href: 'https://x.com/llm4sfoundation/' },
+  { label: 'Bluesky', href: 'https://bsky.app/profile/llm4s-foundation.bsky.social' },
+  { label: 'Mastodon', href: 'https://mastodon.social/@llm4s_foundation/' },
+  { label: 'Instagram', href: 'https://www.instagram.com/llm4s/' },
+];
+
+const speakerLinks = [
+  { label: 'LinkedIn', href: 'https://www.linkedin.com/in/kannupriyakalra/' },
+  { label: 'X / Twitter', href: 'https://x.com/KannupriyaKalra' },
+  { label: 'Bluesky', href: 'https://bsky.app/profile/kannupriyakalra.bsky.social' },
+  { label: 'Functional Café', href: 'https://functional.cafe/@kannupriyakalra' },
+  { label: 'Reddit', href: 'https://www.reddit.com/user/kannupriyakalra/' },
+  { label: 'GitHub', href: 'https://github.com/kannupriyakalra' },
+];
+
 export default function OrientationEventPage() {
   const [copied, setCopied] = useState(false);
 
@@ -117,6 +135,14 @@ export default function OrientationEventPage() {
               <a href="https://llm4s.org/contribute/" target="_blank" rel="noopener noreferrer">Contribution guide <ArrowUpRight size={17} aria-hidden="true" /></a>
               <a href="https://github.com/llm4s/llm4s/issues?q=label%3A%22good+first+issue%22" target="_blank" rel="noopener noreferrer">Explore good first issues <ArrowUpRight size={17} aria-hidden="true" /></a>
               <a href="https://llm4s.org/events/" target="_blank" rel="noopener noreferrer">Community events &amp; Dev Hours <ArrowUpRight size={17} aria-hidden="true" /></a>
+              <div className="orientation-follow">
+                <span className="orientation-section-label">Follow LLM4S Foundation</span>
+                <ul className="orientation-chips" aria-label="LLM4S Foundation on social media">
+                  {foundationLinks.map((link) => (
+                    <li key={link.href}><a href={link.href} target="_blank" rel="noopener noreferrer">{link.label} <ArrowUpRight size={14} aria-hidden="true" /></a></li>
+                  ))}
+                </ul>
+              </div>
             </div>
           </section>
 
@@ -130,6 +156,12 @@ export default function OrientationEventPage() {
                 <p>She contributes to the AI and Scala open-source ecosystem through the Scala Center and Google Open Source and has led the Google Summer of Code programs for the Scala Center in 2024 and 2025. She is also collaborating with Manning Publishing in New York City to create practical AI learning resources for developers.</p>
                 <p>A global speaker, Kannupriya has presented on AI, Scala, and open source in more than ten countries. She is passionate about empowering developers through hands-on generative AI projects, meaningful open-source contributions, mentorship, and responsible AI education.</p>
                 <p>Her engineering experience includes building scalable backend systems using functional Scala at Sky in London.</p>
+                <p>You can learn more about her work on <a className="orientation-inline-link" href="https://www.linkedin.com/in/kannupriyakalra/" target="_blank" rel="noopener noreferrer">LinkedIn</a>.</p>
+                <ul className="orientation-chips" aria-label="Kannupriya Kalra online">
+                  {speakerLinks.map((link) => (
+                    <li key={link.href}><a href={link.href} target="_blank" rel="noopener noreferrer">{link.label} <ArrowUpRight size={14} aria-hidden="true" /></a></li>
+                  ))}
+                </ul>
               </div>
               <figure className="orientation-poster">
                 <img src="/ecell-orientation-poster.jpg" alt="Official E-Cell Orientation and Pitch Please Competition poster featuring Ms. Kannupriya Kalra" loading="lazy" />
