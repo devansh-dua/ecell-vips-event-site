@@ -39,6 +39,11 @@ export default function OrientationEventPage() {
         <div className="orientation-shell">
           <Link className="orientation-back" to="/events"><ArrowLeft size={16} aria-hidden="true" /> Back to events</Link>
 
+          <figure className="orientation-banner">
+            <img src="/llm4s-retrospective-banner.jpg" alt="LLM4S Foundation: A Retrospective technical session banner with Kannupriya Kalra, VIPS-TC campus, 23 October 2026 at 10 AM" />
+            <figcaption>Official technical session banner · E-Cell VIPS-TC</figcaption>
+          </figure>
+
           <div className="orientation-hero">
             <div className="orientation-intro">
               <div className="orientation-eyebrow"><span className="orientation-eyebrow-line" /> E-CELL VIPS-TC <span className="orientation-eyebrow-dot">/</span> 2026</div>
@@ -57,10 +62,6 @@ export default function OrientationEventPage() {
                 <button className="orientation-share" type="button" onClick={shareEvent} aria-label={copied ? 'Event link copied' : 'Share event'}><Share2 size={17} aria-hidden="true" /> {copied ? 'Link copied' : 'Share event'}</button>
               </div>
             </div>
-            <figure className="orientation-poster">
-              <img src="/ecell-orientation-poster.jpg" alt="Official E-Cell Orientation and Pitch Please Competition poster featuring Ms. Kannupriya Kalra" />
-              <figcaption>Official event poster · E-Cell VIPS-TC</figcaption>
-            </figure>
           </div>
 
           <div className="orientation-divider" />
@@ -85,8 +86,20 @@ export default function OrientationEventPage() {
             </div>
           </section>
 
+          <section className="orientation-section orientation-description" aria-labelledby="description-heading">
+            <div className="orientation-section-label">02 / Talk description</div>
+            <div className="orientation-copy">
+              <h2 id="description-heading">The first chapter of LLM4S Foundation.</h2>
+              <p>This talk is a retrospective on the first chapter of LLM4S Foundation: how it grew from an idea in January 2025 into a 400+ member global Scala and AI community, and how Scala developers can now use this community to start or accelerate their journey into AI engineering.</p>
+              <p>I will share how my work in the Scala open-source ecosystem since 2022—including ScalaBridge, the London Scala User Group, the Scala Center, and Google Summer of Code—helped shape LLM4S Foundation into a practical, remote-first space for learning, open-source contribution, mentorship, technical talks, networking, and global internship opportunities.</p>
+              <p>The session will focus on how developers can leverage LLM4S Foundation today: joining our weekly Dev Hours every Sunday at 9:00 AM London time, meeting maintainers and principal Scala developers, learning from experienced mentors, contributing to a real Scala AI library, giving technical talks, building a public open-source track record, and developing practical AI skills without the barrier of expensive AI education.</p>
+              <p>I will also explore why this matters for the wider Scala ecosystem. As AI becomes increasingly central to software engineering, Scala developers need an accessible path into AI that builds on their existing strengths in type safety, functional programming, backend engineering, distributed systems, and open source. LLM4S Foundation aims to create that path by bringing together people who want to learn, build, mentor, fund, and grow the Scala + AI ecosystem.</p>
+              <p>Attendees will leave with practical ways to participate in the community, find contribution opportunities, learn from experienced mentors, explore global internship and career pathways, and develop their own AI skills while helping Scala/JVM become a serious home for production-ready AI engineering.</p>
+            </div>
+          </section>
+
           <section className="orientation-section orientation-agenda" aria-labelledby="explore-heading">
-            <div className="orientation-section-label">02 / What you’ll explore</div>
+            <div className="orientation-section-label">03 / What you’ll explore</div>
             <div className="orientation-copy">
               <h2 id="explore-heading">A practical starting point.</h2>
               <div className="orientation-topics">
@@ -104,6 +117,24 @@ export default function OrientationEventPage() {
               <a href="https://llm4s.org/contribute/" target="_blank" rel="noopener noreferrer">Contribution guide <ArrowUpRight size={17} aria-hidden="true" /></a>
               <a href="https://github.com/llm4s/llm4s/issues?q=label%3A%22good+first+issue%22" target="_blank" rel="noopener noreferrer">Explore good first issues <ArrowUpRight size={17} aria-hidden="true" /></a>
               <a href="https://llm4s.org/events/" target="_blank" rel="noopener noreferrer">Community events &amp; Dev Hours <ArrowUpRight size={17} aria-hidden="true" /></a>
+            </div>
+          </section>
+
+          <section className="orientation-section orientation-speaker" aria-labelledby="speaker-heading">
+            <div className="orientation-section-label">04 / About the speaker</div>
+            <div className="orientation-speaker-grid">
+              <div className="orientation-copy">
+                <h2 id="speaker-heading">Kannupriya Kalra</h2>
+                <p className="orientation-speaker-role">Co-Founder, LLM4S Foundation · Creator of LLM4S</p>
+                <p>Kannupriya Kalra is the Co-Founder of the LLM4S Foundation and creator of LLM4S, an AI-native platform for Scala. She is an engineering leader based in London.</p>
+                <p>She contributes to the AI and Scala open-source ecosystem through the Scala Center and Google Open Source and has led the Google Summer of Code programs for the Scala Center in 2024 and 2025. She is also collaborating with Manning Publishing in New York City to create practical AI learning resources for developers.</p>
+                <p>A global speaker, Kannupriya has presented on AI, Scala, and open source in more than ten countries. She is passionate about empowering developers through hands-on generative AI projects, meaningful open-source contributions, mentorship, and responsible AI education.</p>
+                <p>Her engineering experience includes building scalable backend systems using functional Scala at Sky in London.</p>
+              </div>
+              <figure className="orientation-poster">
+                <img src="/ecell-orientation-poster.jpg" alt="Official E-Cell Orientation and Pitch Please Competition poster featuring Ms. Kannupriya Kalra" loading="lazy" />
+                <figcaption>Original E-Cell orientation poster · VIPS-TC</figcaption>
+              </figure>
             </div>
           </section>
 
