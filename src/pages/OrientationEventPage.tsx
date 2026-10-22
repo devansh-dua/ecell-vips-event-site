@@ -20,7 +20,7 @@ const speakerLinks = [
   { label: 'X / Twitter', href: 'https://x.com/KannupriyaKalra' },
   { label: 'Bluesky', href: 'https://bsky.app/profile/kannupriyakalra.bsky.social' },
   { label: 'Functional Café', href: 'https://functional.cafe/@kannupriyakalra' },
-  { label: 'Reddit', href: 'https://www.reddit.com/user/kannupriyakalra/' },
+  { label: 'Instagram', href: 'https://www.instagram.com/kannupriyakalra/' },
   { label: 'GitHub', href: 'https://github.com/kannupriyakalra' },
 ];
 
